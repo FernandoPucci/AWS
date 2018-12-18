@@ -8,9 +8,12 @@
 
 Ex:  
 
- `ssh -i ./DESENVOLVIMENTO.pem ec2-user@ec2-18-207-242-194.compute-1.amazonaws.com
+ `ssh -i ./DESENVOLVIMENTO.pem    ec2-user@ec2-18-207-242-194.compute-1.amazonaws.com`
+ 
+---
 ### Public IP
 
 `18.207.242.194`
 
-https://medium.com/@GalarnykMichael/aws-ec2-part-2-ssh-into-ec2-instance-c7879d47b6b2`
+ [Link de Pesquisa - https://medium.com/@GalarnykMichael](
+https://medium.com/@GalarnykMichael/aws-ec2-part-2-ssh-into-ec2-instance-c7879d47b6b2`)

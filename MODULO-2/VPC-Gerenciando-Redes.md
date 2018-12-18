@@ -23,14 +23,14 @@ No curso será criado VPC, com subnets separadas em Zonas de disponibilidade, ca
 Sugere-se que na AWS se trabalhe com o minimo de duas ZDs, para permitir o balanceamento e melhor disponibilidade da aplicação.  
 
 ## CRIAÇÂO VPC
-1- Cria-se a VPC `10.10.0.0/16`;  
-2- Cria-se duas sub-nets publicas (`10.10.1.0/24` [ZD-1a] e `10.10.2.0/24`[ZD-1b]) e 2 subnets privadas (`10.10.3.0/24`[ZD-1a], `10.10.4.0/24`[ZD-1b]);   
-Obs.: O que diferencia uma subnet publica de uma subnet privada, é que a privada não possui Gateway Default, não possui uma rota (Route Tables).  
-3- Cria-se as Route Table (Tabela de Roteamento) Para as redes públicas (RT-CURSO-PUBLIC e RT-CURSO-PRIV).
-4- Adiciona-se um Internet Gateway, para a tabela de roteamento publica. 
-Obs.: O IG deve ser 'atachado' a uma VPC, no nosso caso VPC-CURSO.
-5-novamente em Route Tables, associa-se `0.0.0.0/0` ao IG criado anteriormente, na rota publica. 
-5.1 - Associa-se a Rota Publica às subnets publicas e a Rota privadas às subnets privadas.  
+>- 1. Cria-se a VPC `10.10.0.0/16`;  
+>- 2. Cria-se duas sub-nets publicas (`10.10.1.0/24` [ZD-1a] e `10.10.2.0/24`[ZD-1b]) e 2 subnets privadas (`10.10.3.0/24`[ZD-1a], `10.10.4.0/24`[ZD-1b]);   
+>-      Obs.: O que diferencia uma subnet publica de uma subnet privada, é que a privada não possui Gateway Default, não possui uma rota (Route Tables).  
+>- 3. Cria-se as Route Table (Tabela de Roteamento) Para as redes públicas (RT-CURSO-PUBLIC e RT-CURSO-PRIV).  
+>- 4. Adiciona-se um Internet Gateway, para a tabela de roteamento publica.  
+>-      Obs.: O IG deve ser 'atachado' a uma VPC, no nosso caso VPC-CURSO.  
+>- 5. novamente em Route Tables, associa-se `0.0.0.0/0` ao IG criado anteriormente, na rota publica.  
+      5.1 Associa-se a Rota Publica às subnets publicas e a Rota privadas às subnets privadas.  
 
 
 ### OUTRAS NOMENCLATUREAS  

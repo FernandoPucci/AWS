@@ -8,10 +8,10 @@
 
 **O serviço de configuração de Key Pairs, fica dentro do EC2.**
 
-Não confundir IAM com Key Pair;
+        Não confundir IAM com Key Pair;
 
-IAM - Acesso ao console AWS. 
+IAM - Acesso ao console AWS.  
 Key Pair - Acesso às instancias implantadas (ex. EC2) na AWS.
 
 
-As IAM's possum escopos globais, enquanto as Key Pairs, possuem escopo regional.':w
+    As IAM's possum escopos globais, enquanto as Key Pairs, possuem escopo regional.':w
